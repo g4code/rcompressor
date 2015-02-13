@@ -1,0 +1,35 @@
+{
+  "name": "rcompressor",
+  "version": "0.0.1",
+  "description": "rcompressor node.js library",
+  "main": "./lib/rcompressor.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/g4code/rcompressor"
+  },
+  "keywords": [
+    "rcompressor"
+  ],
+  "author": "Drasko Gomboc <drasko.gomboc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/g4code/rcompressor/issues"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "dependencies": {
+    "evento": "*",
+    "underscore": "*"
+  },
+  "bin": {
+    "rcompressor": "./bin/rcompressor.js"
+  }
+}

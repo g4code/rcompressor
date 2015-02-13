@@ -16,7 +16,11 @@
   "keywords": [
     "rcompressor"
   ],
-  "author": "Drasko Gomboc <drasko.gomboc@gmail.com>",
+  "author": "G4 Code <office@g4code.com>",
+  "maintainers": [
+    "Drasko Gomboc <drasko.gomboc@gmail.com>",
+    "Zeljko Simic <zeljkosbgd@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/g4code/rcompressor/issues"
@@ -26,8 +30,12 @@
     "chai": "*"
   },
   "dependencies": {
+    "underscore": "*",
+    "requirejs": "*",
+    "commando": "*",
+    "commander": "*",
     "evento": "*",
-    "underscore": "*"
+    "informer": "*"
   },
   "bin": {
     "rcompressor": "./bin/rcompressor.js"

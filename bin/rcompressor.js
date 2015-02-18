@@ -8,14 +8,14 @@ var RCompressor = require("../lib/rcompressor"),
 		.usage("[options] [dir]")
 		.option('-a, --action <n>',     'action - compress/revert')
 		.option('-c, --config <n>',     'config file path')
+		.option('-u, --baseUrl <n>',   'base url')
 		.parse(process.argv);
 
-try {
-    config = require(commander.config);
-    var rCompressor = new RCompressor();
-    rCompressor.request.config	= config;
-    rCompressor.request.action	= commander.action;
-    rCompressor.run();
-} catch (err) {
-    informer.error('Wrong config path');
-}
+
+config = require(commander.config);
+config.baseUrl = commander.baseUrl;
+
+var rCompressor = new RCompressor();
+rCompressor.request.config	= config;
+rCompressor.request.action	= commander.action;
+rCompressor.run();

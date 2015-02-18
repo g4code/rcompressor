@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 var RCompressor = require("../lib/rcompressor"),
 	commander     = require("commander"),
-	packageData   = require(__dirname + "/../package.json");
+	packageData   = require(__dirname + "/../package.json"),
+	informer      = require("informer");
 
 	commander.version(packageData.version)
 		.usage("[options] [dir]")
@@ -16,5 +17,5 @@ try {
     rCompressor.request.action	= commander.action;
     rCompressor.run();
 } catch (err) {
-    console.log('Wrong config path');
+    informer.error('Wrong config path');
 }

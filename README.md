@@ -5,7 +5,7 @@ rcompressor
 
 ## Install
 
-    $ npm install rcompressor
+    $ npm install -g rcompressor
 
 ## Usage
 
